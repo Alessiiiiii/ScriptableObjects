@@ -391,7 +391,7 @@ GameObject:
   - component: {fileID: 477426985}
   - component: {fileID: 477426989}
   m_Layer: 0
-  m_Name: Enemigo3
+  m_Name: Esqueletor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -482,7 +482,7 @@ Transform:
   m_GameObject: {fileID: 477426984}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.86, y: 1.67, z: 5.81}
+  m_LocalPosition: {x: 5.86, y: 1.67, z: 9.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -515,7 +515,7 @@ GameObject:
   - component: {fileID: 523280543}
   - component: {fileID: 523280547}
   m_Layer: 0
-  m_Name: Enemigo1
+  m_Name: Orco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -604,7 +604,7 @@ Transform:
   m_GameObject: {fileID: 523280542}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.69, y: 0.86, z: -4.96}
+  m_LocalPosition: {x: -0.9, y: 0.86, z: 6.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -809,7 +809,7 @@ GameObject:
   - component: {fileID: 867471809}
   - component: {fileID: 867471813}
   m_Layer: 0
-  m_Name: Enemigo2
+  m_Name: Dragon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -898,7 +898,7 @@ Transform:
   m_GameObject: {fileID: 867471808}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.05, z: 0}
+  m_LocalPosition: {x: 2.2, y: 1.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

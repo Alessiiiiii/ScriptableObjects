@@ -4,41 +4,31 @@ public class Player : MonoBehaviour
 {
     public float velocidad = 5f;
 
-    void Update()  // Se ejecuta en cada frame
+    void Update()  
     {
         MoverJugador();
 
-        if (Input.GetKeyDown(KeyCode.R))  // Interacción con enemigos cercanos
+        if (Input.GetKeyDown(KeyCode.R))  
         {
             InteractuarConEnemigo();
         }
 
-        if (Input.GetKeyDown(KeyCode.E))  // Ataque a enemigos cercanos
+        if (Input.GetKeyDown(KeyCode.E))  
         {
             AtacarEnemigo();
         }
     }
 
-    void MoverJugador()  // Movimiento en X, Y y Z con WASD
+    void MoverJugador()
     {
-        float horizontal = Input.GetAxis("Horizontal") * velocidad * Time.deltaTime;  // A/D - Izquierda/Derecha
-        float vertical = Input.GetAxis("Vertical") * velocidad * Time.deltaTime;      // W/S - Adelante/Atrás
-        float altura = 0;
+        float horizontal = Input.GetAxis("Horizontal") * velocidad * Time.deltaTime;
+        float vertical = Input.GetAxis("Vertical") * velocidad * Time.deltaTime;
+        transform.Translate(horizontal, 0, vertical); 
 
-        if (Input.GetKey(KeyCode.Space))  // Subir con Espacio
-        {
-            altura = velocidad * Time.deltaTime;
-        }
-        else if (Input.GetKey(KeyCode.LeftControl))  // Bajar con Ctrl
-        {
-            altura = -velocidad * Time.deltaTime;
-        }
-
-        transform.Translate(horizontal, altura, vertical);  // Aplica el movimiento en los tres ejes
-    }
+       }
     Enemy FindClosestEnemy()
     {
-        float rangoDeteccion = 5f;  // Define la distancia máxima de búsqueda
+        float rangoDeteccion = 5f;  
         Collider[] colliders = Physics.OverlapSphere(transform.position, rangoDeteccion);
 
         Enemy enemigoMasCercano = null;
